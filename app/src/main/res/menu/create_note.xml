@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:iconTint="#000000"
+        android:enabled="true"
+        android:icon="@drawable/ic_check"
+        android:title="@string/action_settings"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/addNoteBtn"
+        android:enabled="true"
+        android:icon="@drawable/ic_check"
+        android:title="Save"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

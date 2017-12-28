@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19495F"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.alkalynx.alanfal.alanfal.VerificationActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_bigemail" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="A verification has been sent to the below email address. Please confirm if you want to use this email as your Alanfal account!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailPlain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputstyle"
+        android:editable="false"
+        android:padding="5dp"
+        android:text="lorememail@gmail.com"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:onClick="resendBtn"
+        android:id="@+id/signButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#326F85"
+        android:text="Resend verification"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:onClick="backToLoginBtn"
+        android:id="@+id/backtoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#326F85"
+        android:text="BACK TO LOGIN"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

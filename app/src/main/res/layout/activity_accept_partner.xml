@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alkalynx.alanfal.alanfal.AcceptPartner">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_layout_shadow"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profile_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile_avatar" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textColor="#8A8A8A"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_name"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:text="Email"
+                android:textColor="#8A8A8A"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_email"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/accept_as_partner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone"
+                    fancy:fb_defaultColor="#19495F"
+                    fancy:fb_focusColor="#DDDDDD"
+                    fancy:fb_iconPaddingLeft="0dp"
+                    fancy:fb_iconPaddingRight="0dp"
+                    fancy:fb_iconPaddingTop="5dp"
+                    fancy:fb_iconResource="@drawable/ic_add_toolbar"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="Accept Request"
+                    fancy:fb_textSize="15sp" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/deletePartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone"
+                    fancy:fb_defaultColor="#d32f2f"
+                    fancy:fb_focusColor="#DDDDDD"
+                    fancy:fb_fontIconResource="@string/fa_user_times"
+                    fancy:fb_fontIconSize="14sp"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="DELETE"
+                    fancy:fb_textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/notesBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_notes"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="19"
+                    android:textColor="#8A8A8A"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profile_notes_lbl"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_notes"
+                    android:gravity="center_horizontal"
+                    android:text="Notes"
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/partnersBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/notesBox"
+                android:textColor="#8A8A8A">
+
+                <TextView
+                    android:id="@+id/profile_partner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="41"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_partner"
+                    android:gravity="center_horizontal"
+                    android:text="Partner"
+                    android:textColor="#8A8A8A"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

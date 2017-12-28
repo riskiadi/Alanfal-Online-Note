@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "168410104977",
+    "firebase_url": "https://alanfal-c999f.firebaseio.com",
+    "project_id": "alanfal-c999f",
+    "storage_bucket": "alanfal-c999f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168410104977:android:887cf0124f21f074",
+        "android_client_info": {
+          "package_name": "com.alkalynx.alanfal.alanfal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168410104977-koh0g7t5f2n51aeq4203buvjkd0jrh2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alkalynx.alanfal.alanfal",
+            "certificate_hash": "002ab3f1ea9ba429158d27d4f537c656bb194abe"
+          }
+        },
+        {
+          "client_id": "168410104977-nk2fnbcnv8fhuad7c68plg1up1u82rqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh4MDk8J8iRYzfiKRPvFJngxaCeM6L6_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168410104977-nk2fnbcnv8fhuad7c68plg1up1u82rqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

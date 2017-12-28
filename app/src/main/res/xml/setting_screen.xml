@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Profile" />
+
+    <EditTextPreference
+        android:key="prefUser"
+        android:summary="-"
+        android:title="Change Display Name" />
+
+    <EditTextPreference
+        android:enabled="false"
+        android:key="prefEmail"
+        android:summary="-"
+        android:title="Email" />
+
+    <EditTextPreference android:title="Change Password" />
+
+    <Preference android:title="Delete Account" />
+
+    <Preference
+        android:key="prefLogout"
+        android:title="Logout" />
+
+    <PreferenceCategory android:title="Application" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="rememberMe"
+        android:title="Remember Me" />
+
+    <Preference android:title="Beta Version" />
+
+
+</PreferenceScreen>

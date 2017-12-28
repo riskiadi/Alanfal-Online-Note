@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createNoteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.alkalynx.alanfal.alanfal.CreateNoteActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/createNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/createnotestyle"
+                android:hint="Note Title"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="#19495F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/createNoteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/tagPartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#DDDDDD"
+                    fancy:fb_iconPaddingLeft="0dp"
+                    fancy:fb_iconPaddingRight="0dp"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_iconResource="@drawable/ic_tag_partner"
+                    fancy:fb_text="TAG PARTNER"
+                    fancy:fb_textColor="#19495F" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/tagNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tagPartner"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    fancy:fb_defaultColor="#FFFFFF"
+                    fancy:fb_focusColor="#DDDDDD"
+                    fancy:fb_iconPaddingLeft="0dp"
+                    fancy:fb_iconPaddingRight="0dp"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_iconResource="@drawable/ic_bookmark_note"
+                    fancy:fb_text="ADD BOOKMARK"
+                    fancy:fb_textColor="#19495F" />
+
+                <View
+                    android:id="@+id/gridLine"
+                    style="?android:selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tagPartner"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#19495F" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/createNoteAuthorElement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/createNoteAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Author: RizkiAdi"
+                    android:textColor="#19495F"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/gridLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/createNoteAuthor"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#19495F" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:gravity="left|top"
+                android:id="@+id/createNoteContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/createnotestyle"
+                android:hint="What is on your mind?"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_edit"
+        android:tint="#FFFFFF" />
+
+</RelativeLayout>

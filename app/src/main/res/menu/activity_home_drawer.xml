@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_note"
+            android:icon="@drawable/ic_add_toolbar"
+            android:title="Add Note" />
+        <item
+            android:id="@+id/nav_manage_bookmark"
+            android:icon="@drawable/ic_bookmark_white"
+            android:title="Manage Bookmark" />
+        <item
+            android:id="@+id/nav_invites"
+            android:icon="@drawable/ic_add_partner"
+            android:title="Invites" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share This App" />
+    </group>
+
+</menu>

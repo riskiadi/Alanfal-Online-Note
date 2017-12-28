@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="com.alkalynx.alanfal.alanfal.AddPartnerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Partner Email"
+        android:textColor="#19495F"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchPartner"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/searchPartnerButton"
+            android:layout_toStartOf="@+id/searchPartnerButton"
+            android:background="@drawable/inputstyle"
+            android:hint="Enter your partner email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/searchPartnerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:onClick="xsearchButton"
+            android:padding="5dp"
+            fancy:fb_defaultColor="#EEEEF3"
+            fancy:fb_focusColor="#CCCCCC"
+            fancy:fb_iconPaddingLeft="0dp"
+            fancy:fb_iconPaddingRight="0dp"
+            fancy:fb_iconPaddingTop="3dp"
+            fancy:fb_iconResource="@drawable/ic_search"
+            fancy:fb_text="" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/partnerDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        app:cardCornerRadius="5dp"
+        card_view:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/profile_avatar" />
+
+            <TextView
+                android:id="@+id/searchUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="-"
+                android:textColor="#263238"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/searchEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchUsername"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="-"
+                android:textColor="#757575"
+                android:textSize="16sp" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/searchAddPartner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/searchEmail"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                fancy:fb_defaultColor="#19495F"
+                fancy:fb_focusColor="#DDDDDD"
+                fancy:fb_fontIconResource="@string/fa_user_plus"
+                fancy:fb_fontIconSize="14sp"
+                fancy:fb_radius="3dp"
+                fancy:fb_text="ADD AS PARTNER"
+                fancy:fb_textSize="14sp" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/deletePartner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/searchAddPartner"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                fancy:fb_defaultColor="#d32f2f"
+                fancy:fb_focusColor="#DDDDDD"
+                fancy:fb_fontIconResource="@string/fa_user_times"
+                fancy:fb_fontIconSize="14sp"
+                fancy:fb_radius="3dp"
+                fancy:fb_text="DELETE"
+                fancy:fb_textSize="14sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/userNotFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="User not found."
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/addPartnerProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone" />
+
+</LinearLayout>
